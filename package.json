@@ -1,12 +1,20 @@
 {
   "name": "@liuyuanyuan_npm/test-sfc-cli",
   "version": "1.0.0",
-  "description": "",
-  "author": "https://github.com/liuyuanyuan_npm",
+  "description": "test-sfc-cli for Vue",
   "license": "MIT",
+  "author": {
+    "name": "lyy",
+    "email": "lyy@foxmail.com",
+    "url": "https://github.com/liuyuanyuannumberone/test-sfc-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/liuyuanyuannumberone/test-sfc-cli/issues"
+  },
+  "homepage": "https://github.com/liuyuanyuannumberone/test-sfc-cli#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/liuyuanyuan_npm/test-sfc-cli.git"
+    "url": "https://github.com/liuyuanyuannumberone/test-sfc-cli.git"
   },
   "keywords": [
     "vue",
@@ -20,6 +28,7 @@
   "main": "dist/test-sfc-cli.umd.js",
   "module": "dist/test-sfc-cli.esm.js",
   "unpkg": "dist/test-sfc-cli.min.js",
+  "jsnext:main": "dist/test-sfc-cli.min.js",
   "browser": {
     "./sfc": "src/test-sfc-cli.vue"
   },
