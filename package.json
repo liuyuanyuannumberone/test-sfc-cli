@@ -42,7 +42,8 @@
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/test-sfc-cli.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/test-sfc-cli.min.js",
     "stdver": "standard-version -m '[skip ci] chore(release): v%s'",
-    "release": "gren release --override"
+    "release": "gren release --override",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {},
   "devDependencies": {
