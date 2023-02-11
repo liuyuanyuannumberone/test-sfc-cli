@@ -11,8 +11,10 @@ const argv = minimist(process.argv.slice(2))
 const config = {
   input: 'src/index.js',
   output: {
-    name: 'TestSfcCli',
-    exports: 'named'
+    name: 'TestSfcCli', //在想要使用全局变量名来表示你的 bundle 时，输出格式必须指定为 iife 或 umd。
+    //同一个页面上的其他脚本可以通过这个变量名来访问你的 bundle 导出。
+    exports: 'named' // import TestSfcCli from '@liuyuanyuan_npm/test-sfc-cli'
+    // https://rollupjs.org/configuration-options/#output-exports
   },
   plugins: [
     commonjs(),

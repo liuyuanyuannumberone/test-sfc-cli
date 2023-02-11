@@ -33,6 +33,10 @@
     "./sfc": "src/test-sfc-cli.vue"
   },
   "types": "src/test-sfc-cli.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "http://192.168.48.160:8073/repository/npm-hosted-private/"
+  },
   "scripts": {
     "dev": "vue-styleguidist server",
     "test": "jest --verbose",
@@ -80,9 +84,6 @@
     "vue-styleguidist": "^3.16.3",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.29.6"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "vue-sfc-cli": "1.14.0",
   "engines": {

@@ -41,7 +41,7 @@ module.exports = {
   styleguideDir: 'docs',
   pagePerSection: true,
   ribbon: {
-    url: 'https://github.com/liuyuanyuan_npm/test-sfc-cli'
+    url: 'https://github.com/liuyuanyuannumberone/test-sfc-cli'
   },
   sections,
   webpackConfig: {

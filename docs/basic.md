@@ -6,10 +6,16 @@
 </template>
 
 <script>
+/*  import TestSfcCli from '@liuyuanyuan_npm/test-sfc-cli' */
 export default {
+  components: {
+    /* TestSfcCli */
+  },
   data() {
-    return {}
-  }
+    return {
+      
+    }
+  }   
 }
 </script>
 ```
