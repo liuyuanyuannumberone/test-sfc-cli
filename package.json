@@ -1,5 +1,5 @@
 {
-  "name": "@charlesliu/test-sfc-cli",
+  "name": "@liuyuanyuan_npm/test-sfc-cli",
   "version": "1.0.8",
   "description": "test-sfc-cli for Vue",
   "license": "MIT",
@@ -34,8 +34,7 @@
   },
   "types": "src/test-sfc-cli.d.ts",
   "publishConfig": {
-    "access": "public",
-    "registry": "http://192.168.48.160:8073/repository/npm-hosted-private/"
+    "access": "public"
   },
   "scripts": {
     "dev": "vue-styleguidist server",
