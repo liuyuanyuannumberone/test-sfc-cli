@@ -1,6 +1,6 @@
 {
   "name": "@liuyuanyuan_npm/test-sfc-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "test-sfc-cli for Vue",
   "license": "MIT",
   "author": {
@@ -46,7 +46,10 @@
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/test-sfc-cli.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/test-sfc-cli.min.js",
     "stdver": "standard-version -m '[skip ci] chore(release): v%s'",
-    "stdver-current": "standard-version",
+    "release-patch": "standard-version --release-as patch",
+    "release-minor": "standard-version --release-as minor",
+    "release-major": "standard-version --release-as major",
+    "release-static": "standard-version --release-as 3.3.3",
     "release": "gren release --override",
     "prepublishOnly": "npm run build"
   },
