@@ -16,13 +16,14 @@ module.exports = {
   ],
   plugins: ['vue', 'prettier', 'jest'],
   rules: {
-    'no-console': [
-      'error',
-      {
-        allow: ['warn', 'error']
-      }
-    ],
-    'no-debugger': 'error',
-    'prettier/prettier': 'error'
+    // 'no-console': [
+    //   'error',
+    //   {
+    //     allow: ['warn', 'error']
+    //   }
+    // ],
+    // 'no-debugger': 'error',
+    'no-debugger': 'off'
+    // 'prettier/prettier': 'error'
   }
 }

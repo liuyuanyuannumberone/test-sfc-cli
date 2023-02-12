@@ -36,14 +36,15 @@ const sections = (() => {
       : [])
   ]
 })()
-
 module.exports = {
   styleguideDir: 'docs',
   pagePerSection: true,
   ribbon: {
-    url: 'https://github.com/liuyuanyuannumberone/test-sfc-cli'
+    url: 'https://github.com/liuyuanyuannumberone/test-sfc-cli',
+    text: 'Fork me on GitHub'
   },
   sections,
+  serverPort: 7000,
   webpackConfig: {
     module: {
       rules: [

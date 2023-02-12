@@ -36,7 +36,7 @@
     "access": "public"
   },
   "scripts": {
-    "start": "vue-styleguidist server",
+    "dev": "vue-styleguidist server",
     "test": "jest --verbose",
     "build": "run-p build:*",
     "build:doc": "vue-styleguidist build",

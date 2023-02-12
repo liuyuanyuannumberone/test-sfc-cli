@@ -19,3 +19,4 @@ docs/*.ttf
 .env
 
 package-lock.json
+/el-data-table

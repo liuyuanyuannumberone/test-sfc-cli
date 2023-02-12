@@ -9,7 +9,12 @@
 export default {
   data() {
     return {}
-  }   
+  },
+  methods:{
+    add(){
+      console.log(1)
+    }
+  }  
 }
 </script>
 ```
