@@ -1,9 +1,10 @@
 # 更新日志
 
-### 1.0.1 (2023-02-12)
+## (2023-02-12)
 
 ### 🚀 Chore | 构建/工程依赖/工具
 
+- **release:** 1.0.1 ([815d4a3](https://github.com/liuyuanyuannumberone/test-sfc-cli/commit/815d4a3918b5a0a3634ae3dbea86d17061d3455a))
 - **release:** 1.0.1 ([9450b1c](https://github.com/liuyuanyuannumberone/test-sfc-cli/commit/9450b1cb06f4ab4df5f36e0fe783f5819f600783))
 - **release:** 1.0.2 ([7662d36](https://github.com/liuyuanyuannumberone/test-sfc-cli/commit/7662d36154980bb54533ce7774093a9a06ed5b29))
 - **release:** 1.0.2 ([cd58d8c](https://github.com/liuyuanyuannumberone/test-sfc-cli/commit/cd58d8c2ede3378b6dc3d6aef876ac35df740755))

@@ -1,6 +1,6 @@
 {
   "name": "@charlesliuy/test-sfc-cli",
-  "version": "1.0.1",
+  "version": null,
   "description": "test-sfc-cli for Vue",
   "license": "MIT",
   "author": {
@@ -37,21 +37,20 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "vue-styleguidist server",
+    "start": "vue-styleguidist server",
     "test": "jest --verbose",
-    "doc": "vue-styleguidist build",
-    "build": "npm run build:unpkg & npm run build:es & npm run build:umd & npm run doc",
+    "build": "run-p build:*",
+    "build:doc": "vue-styleguidist build",
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/test-sfc-cli.umd.js",
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/test-sfc-cli.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/test-sfc-cli.min.js",
+    "release": "gren release --override",
     "stdver": "standard-version -m '[skip ci] chore(release): v%s'",
     "release-patch": "standard-version --release-as patch",
     "release-minor": "standard-version --release-as minor",
     "release-major": "standard-version --release-as major",
-    "release-static": "standard-version --release-as 3.3.3",
-    "release-commit": "standard-version",
-    "release": "gren release --override",
-    "prepublishOnly": "npm run build"
+    "release-static": "standard-version --release-as $npm_package_version",
+    "prepublishOnly": "run-s release-static build"
   },
   "dependencies": {},
   "devDependencies": {
@@ -76,6 +75,7 @@
     "less-loader": "^5.0.0",
     "lint-staged": "^8.1.0",
     "minimist": "^1.2.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "1.18.2",
     "rollup": "^2.41.0",
     "rollup-plugin-terser": "^4.0.4",
