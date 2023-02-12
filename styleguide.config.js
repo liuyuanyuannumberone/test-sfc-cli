@@ -45,6 +45,8 @@ module.exports = {
   },
   sections,
   serverPort: 7000,
+  renderRootJsx: path.join(__dirname, 'config/styleguide.root.js'),
+  require: [path.join(__dirname, 'styleguide/global.requires.js')],
   webpackConfig: {
     module: {
       rules: [
