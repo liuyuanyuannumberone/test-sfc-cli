@@ -49,6 +49,7 @@
     "release-minor": "standard-version --release-as minor",
     "release-major": "standard-version --release-as major",
     "release-static": "standard-version --release-as 3.3.3",
+    "release-commit": "standard-version",
     "release": "gren release --override",
     "prepublishOnly": "npm run build"
   },
