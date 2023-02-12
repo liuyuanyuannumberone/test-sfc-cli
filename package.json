@@ -1,6 +1,6 @@
 {
   "name": "@charlesliuy/test-sfc-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "test-sfc-cli for Vue",
   "license": "MIT",
   "author": {
@@ -47,7 +47,8 @@
     "release-minor": "standard-version --release-as minor",
     "release-major": "standard-version --release-as major",
     "lint": "eslint \"**/*.@(js|vue)\" --fix",
-    "publish": "run-s release-patch build"
+    "pub": "run-s release-patch build publish",
+    "publish": "publish"
   },
   "dependencies": {
     "vue-router": "3.5.1",
