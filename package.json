@@ -1,6 +1,6 @@
 {
   "name": "@charlesliuy/test-sfc-cli",
-  "version": null,
+  "version": "1.0.0",
   "description": "test-sfc-cli for Vue",
   "license": "MIT",
   "author": {
@@ -28,7 +28,6 @@
   "main": "dist/test-sfc-cli.umd.js",
   "module": "dist/test-sfc-cli.esm.js",
   "unpkg": "dist/test-sfc-cli.min.js",
-  "jsnext:main": "dist/test-sfc-cli.min.js",
   "browser": {
     "./sfc": "src/test-sfc-cli.vue"
   },
@@ -44,13 +43,10 @@
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/test-sfc-cli.umd.js",
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/test-sfc-cli.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/test-sfc-cli.min.js",
-    "release": "gren release --override",
-    "stdver": "standard-version -m '[skip ci] chore(release): v%s'",
+    "prepublishOnly": "run-s release-patch build",
     "release-patch": "standard-version --release-as patch",
     "release-minor": "standard-version --release-as minor",
-    "release-major": "standard-version --release-as major",
-    "release-static": "standard-version --release-as $npm_package_version",
-    "prepublishOnly": "run-s release-static build"
+    "release-major": "standard-version --release-as major"
   },
   "dependencies": {},
   "devDependencies": {
@@ -117,6 +113,5 @@
       "stylelint --fix",
       "git add"
     ]
-  },
-  "gren": "@femessage/grenrc"
+  }
 }
