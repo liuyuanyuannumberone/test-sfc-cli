@@ -1,6 +1,6 @@
 <template>
   <div class="test-sfc-cli" v-bind="$attrs" v-on="$listeners">
-    hello
+    <span class="content">hello</span>
   </div>
 </template>
 
@@ -14,4 +14,10 @@ export default {
 }
 </script>
 
-<style lang="less"></style>
+<style lang="less">
+.test-sfc-cli {
+  .content {
+    color: red;
+  }
+}
+</style>

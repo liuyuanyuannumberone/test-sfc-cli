@@ -3,6 +3,7 @@ import vue from 'rollup-plugin-vue'
 import babel from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import {terser} from 'rollup-plugin-terser'
+import clear from 'rollup-plugin-clear'
 import minimist from 'minimist'
 // import css from 'rollup-plugin-css-only'
 
@@ -18,12 +19,11 @@ const config = {
   },
   plugins: [
     commonjs(),
-    // https://rollup-plugin-vue.vuejs.org/examples.html#extract-css
     // css({
-    //   output: 'TestSfcCli',
+    //   output: 'css/TestSfcCli.css',
     // }),
     vue({
-      // css: false,
+      css: true, //默认true,是否将css inject js中,配合rollup-plugin-css-only
       compileTemplate: true,
       style: {
         postcssPlugins: [require('autoprefixer')]
@@ -35,6 +35,12 @@ const config = {
       babelHelpers: 'runtime',
       extensions: ['.js', '.jsx', '.es6', '.es', '.mjs', '.vue'],
       exclude: 'node_modules/**'
+    }),
+    clear({
+      // required, point out which directories should be clear.
+      targets: ['dist']
+      // optional, whether clear the directores when rollup recompile on --watch mode.
+      // watch: true, // default: false
     })
   ]
 }
