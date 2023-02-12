@@ -1,5 +1,7 @@
 # 更新日志
 
+### [1.0.2](https://github.com/liuyuanyuannumberone/test-sfc-cli/compare/v1.0.1...v1.0.2) (2023-02-12)
+
 ### 1.0.1 (2023-02-12)
 
 ### 🚀 Chore | 构建/工程依赖/工具
