@@ -1,10 +1,12 @@
 # test-sfc-cli
 
-[![Build Status](https://badgen.net/travis/liuyuanyuan_npm/test-sfc-cli/main)](https://travis-ci.com/liuyuanyuan_npm/test-sfc-cli)
-[![NPM Download](https://badgen.net/npm/dm/@liuyuanyuan_npm/test-sfc-cli)](https://www.npmjs.com/package/@liuyuanyuan_npm/test-sfc-cli)
-[![NPM Version](https://badge.fury.io/js/%40liuyuanyuan_npm%2Ftest-sfc-cli.svg)](https://www.npmjs.com/package/@liuyuanyuan_npm/test-sfc-cli)
-[![NPM License](https://badgen.net/npm/license/@liuyuanyuan_npm/test-sfc-cli)](https://github.com/liuyuanyuan_npm/test-sfc-cli/blob/main/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/liuyuanyuan_npm/test-sfc-cli/pulls)
+[![Build Status](https://badgen.net/travis/charlesliuy/test-sfc-cli/main)](https://travis-ci.com/charlesliuy/test-sfc-cli)
+
+<!-- [![NPM Download](https://badgen.net/npm/dm/@charlesliuy/test-sfc-cli)](https://www.npmjs.com/package/@charlesliuy/test-sfc-cli) -->
+
+[![NPM Version](https://badge.fury.io/js/%40charlesliuy%2Ftest-sfc-cli.svg)](https://www.npmjs.com/package/@charlesliuy/test-sfc-cli)
+[![NPM License](https://badgen.net/npm/license/@charlesliuy/test-sfc-cli)](https://github.com/liuyuanyuannumberone/test-sfc-cli/blob/main/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/liuyuanyuannumberone/test-sfc-cli/pulls)
 [![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github-tools.github.io/github-release-notes/)
 
 开发 Vue 组件
@@ -44,7 +46,7 @@
 Encourage using [Yarn](https://yarnpkg.com/en/docs/install#mac-stable) to install
 
 ```sh
-yarn add @liuyuanyuan_npm/test-sfc-cli
+yarn add @charlesliuy/test-sfc-cli
 ```
 
 [⬆ Back to Top](#table-of-contents)
@@ -55,7 +57,7 @@ yarn add @liuyuanyuan_npm/test-sfc-cli
 
 ```javascript
 import Vue from 'vue'
-import TestSfcCli from '@liuyuanyuan_npm/test-sfc-cli'
+import TestSfcCli from '@charlesliuy/test-sfc-cli'
 Vue.use(TestSfcCli)
 ```
 
