@@ -23,7 +23,7 @@ module.exports = {
     //   }
     // ],
     // 'no-debugger': 'error',
-    'no-debugger': 'off'
-    // 'prettier/prettier': 'error'
+    'no-debugger': 'off',
+    'prettier/prettier': 'off'
   }
 }
