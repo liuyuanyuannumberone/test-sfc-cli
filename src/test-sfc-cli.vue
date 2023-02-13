@@ -1,22 +1,14 @@
 <template>
   <div class="test-sfc-cli" v-bind="$attrs" v-on="$listeners">
-    <a-button type="primary">
-      {{ userName }}
-    </a-button>
+    <button>
+      按钮
+    </button>
   </div>
 </template>
 
 <script>
-import {mapState} from 'vuex'
 export default {
   name: 'TestSfcCli',
-  props: {},
-  data() {
-    return {}
-  },
-  computed: {
-    ...mapState('user', ['userName'])
-  },
   mounted() {
     this.getList()
   },
@@ -26,11 +18,7 @@ export default {
      * @public
      * @param {object} options 方法选项
      */
-    getList() {
-      this.$axios.get('/').then(res => {
-        console.log(res)
-      })
-    }
+    getList() {}
   }
 }
 </script>

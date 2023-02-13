@@ -1,8 +1,8 @@
 // rollup.config.js
 import vue from 'rollup-plugin-vue'
 import babel from '@rollup/plugin-babel'
-import commonjs from '@rollup/plugin-commonjs'
-// import nodeResolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs' //支持CommonJS的模块引用
+// import nodeResolve from '@rollup/plugin-node-resolve';  // 支持npm模块引用,会把import打包进去
 import {terser} from 'rollup-plugin-terser'
 import clear from 'rollup-plugin-clear'
 import minimist from 'minimist'
