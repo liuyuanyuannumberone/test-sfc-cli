@@ -1,6 +1,6 @@
 {
   "name": "@charlesliuy/test-sfc-cli",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "test-sfc-cli for Vue",
   "license": "MIT",
   "author": {
@@ -21,9 +21,11 @@
     "sfc",
     "component"
   ],
+  "typings": "types/index.d.ts",
   "files": [
     "src",
-    "dist"
+    "dist",
+    "types/*.d.ts"
   ],
   "main": "dist/test-sfc-cli.umd.js",
   "module": "dist/test-sfc-cli.esm.js",
@@ -47,14 +49,7 @@
     "release-minor": "standard-version --release-as minor",
     "release-major": "standard-version --release-as major",
     "lint": "eslint \"**/*.@(js|vue)\" --fix",
-    "pub": "run-s release-patch build publish",
-    "publish": "npm publish"
-  },
-  "peerDependencies": {
-    "vue": ">=2.6.0",
-    "vuex": ">=3.0.0",
-    "axios": ">=1.0.0",
-    "ant-design-vue": "1.7.8"
+    "pub": "run-s release-patch build"
   },
   "dependencies": {
     "vue-router": "3.5.1",

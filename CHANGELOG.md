@@ -1,5 +1,7 @@
 # 更新日志
 
+### [1.0.10](https://github.com/liuyuanyuannumberone/test-sfc-cli/compare/v1.0.8...v1.0.10) (2023-02-13)
+
 ### [1.0.8](https://github.com/liuyuanyuannumberone/test-sfc-cli/compare/v1.0.7...v1.0.8) (2023-02-12)
 
 ### [1.0.7](https://github.com/liuyuanyuannumberone/test-sfc-cli/compare/v1.0.6...v1.0.7) (2023-02-12)
