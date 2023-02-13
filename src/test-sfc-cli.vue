@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import $ from 'jquery'
 export default {
   name: 'TestSfcCli',
   mounted() {
@@ -18,7 +19,9 @@ export default {
      * @public
      * @param {object} options 方法选项
      */
-    getList() {}
+    getList() {
+      console.log($)
+    }
   }
 }
 </script>
