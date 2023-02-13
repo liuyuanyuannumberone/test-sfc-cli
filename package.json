@@ -1,6 +1,6 @@
 {
   "name": "@charlesliuy/test-sfc-cli",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "test-sfc-cli for Vue",
   "license": "MIT",
   "author": {
@@ -45,11 +45,14 @@
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/test-sfc-cli.umd.js",
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/test-sfc-cli.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/test-sfc-cli.min.js",
-    "release-patch": "standard-version --release-as patch",
-    "release-minor": "standard-version --release-as minor",
-    "release-major": "standard-version --release-as major",
+    "patch": "standard-version --release-as patch",
+    "minor": "standard-version --release-as minor",
+    "major": "standard-version --release-as major",
     "lint": "eslint \"**/*.@(js|vue)\" --fix",
-    "pub": "run-s release-patch build"
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "lodash": ">=3.0.0"
   },
   "dependencies": {},
   "devDependencies": {
@@ -76,6 +79,7 @@
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "lint-staged": "^8.1.0",
+    "lodash": "^4.17.21",
     "minimist": "^1.2.0",
     "npm-run-all": "^4.1.5",
     "prettier": "1.18.2",
