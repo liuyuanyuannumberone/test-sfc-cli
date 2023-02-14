@@ -29,6 +29,7 @@
   ],
   "main": "dist/test-sfc-cli.umd.js",
   "module": "dist/test-sfc-cli.esm.js",
+  "jsnext:main": "dist/test-sfc-cli.esm.js",
   "unpkg": "dist/test-sfc-cli.min.js",
   "browser": {
     "./sfc": "src/test-sfc-cli.vue"
@@ -52,7 +53,8 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "jquery": ">=2.1.3"
+    "jquery": ">=2.1.3",
+    "vue": "^2.0.0"
   },
   "dependencies": {},
   "devDependencies": {
